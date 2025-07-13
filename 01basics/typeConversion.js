@@ -52,3 +52,43 @@ console.log(booleanIsLoggedIn);
 let num = 33
 let str = String(num);
 console.log(typeof str);
+
+//********OPERATIONS**********/
+let value = 3;
+let negval = -value;
+console.log(negval);
+
+let str1 = "abc";
+let str2 = " cde";
+let str3 = str1 + str2;
+console.log(str3);
+
+console.log("1" + "2");
+console.log(1 + "2");
+console.log("1" + 2);
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+console.log("1" - 2);
+
+console.log(+true);
+console.log(+"");
+
+let num1, num2, num3; 
+num1 = num2 = num3 = 2+2;  // not readable at all even if works
+
+//*********DATA TYPES***********/
+//avoid such comparisons & write clean code
+console.log("2" > 1)
+console.log("02" > 1)
+
+console.log(null > 0)
+console.log(null == 0)
+console.log(null >= 0)
+
+console.log(undefined < 0)
+console.log(undefined == 0)
+console.log(undefined > 0)
+
+// strict check ===
+console.log("2" == 2);
+console.log("2" === 2);
