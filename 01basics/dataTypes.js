@@ -13,7 +13,7 @@ const bigNum = 3475859490099598588n;
 
 //Reference  or Non Primitive
 // arrays, objects, functions
-const numbers = [1,2,3,4,five];
+let nos = [1,2,3,4,"five"];
 let myObj = {
     name: "xyz",
     age: 20
@@ -24,3 +24,24 @@ const myfunc = function(){
 
 console.log(typeof myfunc);
 
+//************STACK VS HEAP*****************/
+// STACK ---> primitive data types use stack ---> copy of variable is sent
+// HEAP ---> reference data types use heap ---> reference of variable is sent
+
+//primitive data type
+let myname = "abc";
+let newname = myname
+newname = "xyz"
+console.log(myname)
+console.log(newname)
+
+// reference data type
+let userOne = {
+    email: "user@google.com",
+    id: 1
+}
+
+let userTwo = userOne;
+userTwo.id = 2;
+console.log(userOne)
+console.log(userTwo)
